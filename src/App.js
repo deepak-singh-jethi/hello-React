@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+export const Hello = () => {
+  let lectureNumber = 2;
+  let pStyle = {
+    marginInline: "auto",
+    textAlign: "center",
+    border: "10px solid blue",
+    width: "300px",
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1 style={{ textAlign: "center", border: "2px solid green" }}>
+        Hello World
+      </h1>
+      <p style={pStyle}>it's Lecture number {lectureNumber}</p>
     </div>
   );
-}
-
-export default App;
+};
